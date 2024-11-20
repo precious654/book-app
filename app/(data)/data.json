@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "One Piece",
+        "author": "Eichiro Oda",
+        "coverImage": "",
+        "type": "Manga",
+        "category": "trending",
+        "rating": 0,
+        "reviews": 0
+    },
+    {
+        "id": 2,
+        "name": "Blue & Gold",
+        "author": "DC",
+        "coverImage": "",
+        "type": "comic",
+        "category": "",
+        "rating": 0,
+        "reviews": 0
+    }
+]
