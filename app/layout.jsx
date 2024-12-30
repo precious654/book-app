@@ -19,11 +19,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <main className="container flex flex-col gap-4">
+        <main className="container flex flex-col gap-1.5 pb-2">
           <Nav />
-          <div>
+          <div className="flex gap-4 flex-grow">
             <SidePanel />
-            {children}
+            <div className="w-full bg-[#F9F9F9] rounded-lg p-4">
+              {children}
+            </div>
           </div>
           <Footer />
         </main>

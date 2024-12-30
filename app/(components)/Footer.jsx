@@ -5,10 +5,12 @@ import { GoPlus } from "react-icons/go";
 import data from "../(data)/data.json";
 
 const Footer = () => {
+    const footerData = data.filter( (item) => item.id <  3);
+
   return (
     <footer className="flex justify-between items-center">
-      <div href="" className="flex items-center gap-4">
-        {data.map((item) => {
+      <div className="flex items-center gap-4">
+        {footerData.map((item) => {
           return (
             <Link
               href="/"

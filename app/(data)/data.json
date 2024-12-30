@@ -18,5 +18,19 @@
         "category": "",
         "rating": 0,
         "reviews": 0
+    },
+    {
+        "id": 3,
+        "name": "absolute batman",
+        "author": "DC",
+        "synopsis": "BATMAN LEGEND SCOTT SNYDER AND ICONIC ARTIST NICK DRAGOTTA TRANSFORM THE DARK KNIGHT'S TALE FOR THE MODERN AGE! Without the mansion... without the money... without the butler... what's left is the Absolute Dark Knight!",
+        "coverImage": "",
+        "type": "comic",
+        "category": ["action", "adventure", "superhero"],
+        "rating": 0,
+        "reviews": 0,
+        "issues": 2,
+        "publishedYear": "2024",
+        "status": "ongoing"
     }
 ]
