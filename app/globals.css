@@ -23,3 +23,7 @@ body {
   margin: auto;
   block-size: 100vh;
 }
+
+.no-scrollbar{
+  scrollbar-width: none;
+}

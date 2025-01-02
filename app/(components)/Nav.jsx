@@ -34,7 +34,9 @@ const Nav = () => {
             <GrSettingsOption style={{ fontSize: '20px' }}/>
           </Link>
           <IoIosNotificationsOutline style={{ fontSize: '25px' }}/>
-          <p className="w-5 h-5 rounded-full bg-[#70706E]"></p>
+          <Link href="/profile">
+            <p className="w-5 h-5 rounded-full bg-[#70706E]"></p>
+          </Link>
         </div>
       </nav>
     </header>
