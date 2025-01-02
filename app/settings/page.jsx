@@ -19,7 +19,7 @@ const Settings = () => {
                 <Image src={avatar} alt="Avatar" width={200} className="rounded-xl" />
                 <div>
                     <p className="capitalize text-xl font-normal">your photo</p>
-                    <p className="text-sm text-[]">This will be displayed on your profile.</p>
+                    <p className="text-sm">This will be displayed on your profile.</p>
                 </div>
             </div>
 
