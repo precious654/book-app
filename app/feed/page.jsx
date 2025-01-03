@@ -82,9 +82,9 @@ function Feed() {
                                 <div className="flex flex-col gap-2">
                                     <p className="font-semibold text-xl capitalize">{item.name}</p>
                                     <div className="flex gap-2.5 items-center">
-                                        <p className={`${item.type === "comic" ? "bg-[#F5BFF1]" : "bg-[#B3D8FF]"} py-1 px-1.5 rounded-sm uppercase`}>{item.type}</p>
-                                        <p className="py-1 px-1.5 bg-[#E7E7E7] rounded-sm uppercase">{item.chapters}</p>
-                                        <p className="py-1 px-1.5 bg-[#E7E7E7] rounded-sm uppercase">{item.status}</p>
+                                        <p className={`${item.type === "comic" ? "bg-[#F5BFF1]" : "bg-[#B3D8FF] text-sm"} py-1 px-1.5 rounded-sm uppercase`}>{item.type}</p>
+                                        <p className="py-1 px-1.5 bg-[#E7E7E7] rounded-sm uppercase text-sm">{item.chapters}</p>
+                                        <p className="py-1 px-1.5 bg-[#E7E7E7] rounded-sm uppercase text-sm">{item.status}</p>
                                     </div>
                                 </div>
                             </div>

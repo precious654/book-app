@@ -21,7 +21,7 @@ const Notifications = () => {
                                     <p className="uppercase">issue</p>
                                     <p>{item.issues}</p>
                                 </div>
-                                <p className="py-1 px-1.5 bg-[#B3D8FF] rounded-md uppercase">new</p>
+                                <p className="py-1 px-1.5 bg-[#B3D8FF] rounded-md uppercase text-sm">new</p>
                             </div>
                         )
                     })

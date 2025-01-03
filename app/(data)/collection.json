@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "want to read",
+    "genres": 14,
+    "titles": [1,2,3,4,5,6,7,8,9,10,11,12,13,14],
+    "creator": "barth"
+  },
+  {
+    "id": 2,
+    "name": "manga",
+    "genres": 12,
+    "titles": [1,2,3,4,5,6,7,8,9,10],
+    "creator": "barth"
+  },
+  {
+    "id": 3,
+    "name": "DC",
+    "genres": 20,
+    "titles": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
+    "creator": "barth"
+  },
+  {
+    "id": 4,
+    "name": "marvel",
+    "genres": 23,
+    "titles": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+    "creator": "barth"
+  },
+  {
+    "id": 5,
+    "name": "manhwa",
+    "genres": 19,
+    "titles": [1,2,3,4,5,6,7,8,9,10,11,12,13],
+    "creator": "barth"
+  }
+]
