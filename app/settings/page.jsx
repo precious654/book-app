@@ -6,7 +6,7 @@ import mal from "@/public/assets/MyAnimeList_Logo.png";
 
 const Settings = () => {
     return (
-        <main>
+        <main className="py-3">
             <div className="w-7/12 flex flex-col gap-2">
                 <p className="text-2xl font-semibold">Settings</p>
                 <p className="text-sm text-[#808080]">

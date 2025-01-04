@@ -12,10 +12,10 @@ import {FaCaretLeft, FaCaretRight} from "react-icons/fa";
 const Library = () => {
     const readData = data.filter((item) => item.id < 4);
     const pinnedData = data.filter((item) => item.id < 7);
-    const readCollctedData = collections.filter((item) => item.id < 4);
+    const readCollectedData = collections.filter((item) => item.id < 4);
 
     return (
-        <main>
+        <main className="py-3">
             <div className="flex justify-between">
                 <div className="w-7/12 flex flex-col gap-2">
                     <p className="text-2xl font-semibold">Library</p>
@@ -74,7 +74,7 @@ const Library = () => {
                             return (
                                 <div key={item.id} className="flex items-center justify-between">
                                     <div className="flex gap-1">
-                                        <Image src={gachiakuta} alt={item.name} width={50} className="rounded-xl"/>
+                                        <Image src={gachiakuta} alt={item.name} width={50} className="rounded-md"/>
                                         <div className="flex flex-col gap-1">
                                             <p className="text-xl font-medium capitalize">{item.name}</p>
                                             <div className="flex gap-2 items-center text-sm">
@@ -95,7 +95,7 @@ const Library = () => {
                 <p className="text-2xl font-medium capitalize">collections</p>
                 <div className="grid grid-cols-3 gap-9 mt-4">
                     {
-                        readCollctedData.map((item) => {
+                        readCollectedData.map((item) => {
                             return (
                                 <div key={item.id} className="flex gap-2">
                                     <Image src={random} alt={item.name} width={140} className="rounded-xl"/>
@@ -122,7 +122,7 @@ const Library = () => {
                     }
                 </div>
                 <div className="mt-5 text-center">
-                    <Link href="/" className="uppercase text-[#1E86F1]">more</Link>
+                    <Link href="/library/collection" className="uppercase text-[#1E86F1]">more</Link>
                 </div>
             </div>
         </main>

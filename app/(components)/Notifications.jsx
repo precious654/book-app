@@ -7,7 +7,7 @@ const Notifications = () => {
     const notificationsData = data.filter((item) => item.id > 3 && item.id < 8 );
 
     return (
-        <div className="w-1/4 bg-[#F1EFEE] rounded-2xl absolute top-20 right-12">
+        <div className="w-1/4 bg-[#F1EFEE] rounded-2xl absolute top-20 right-12 z-10">
             <p className="text-center uppercase text-[#9F9F9F] p-3">Notifications</p>
             <hr className="font-medium"/>
             <div className="flex flex-col gap-3 p-3 mt-1">

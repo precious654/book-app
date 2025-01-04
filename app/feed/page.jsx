@@ -10,7 +10,7 @@ function Feed() {
     const aBatman = data.filter((item) => item.id === 3);
 
     return (
-        <main>
+        <main className="py-3">
             <div className="w-7/12 flex flex-col gap-2">
                 <p className="text-2xl font-semibold">Feed</p>
                 <p className="text-sm text-[#808080]">
@@ -65,32 +65,36 @@ function Feed() {
                 }
             </div>
 
-            <div className="mt-7 flex justify-between items-center">
-                <p className="font-medium text-xl">Trending</p>
-                <div className="flex items-center gap-2">
-                    <button className="bg-[#F1EFEE] px-2.5 py-1 rounded-md"><FaCaretLeft className="text-lg"/></button>
-                    <button className="bg-[#F1EFEE] px-2.5 py-1 rounded-md"><FaCaretRight className="text-lg"/></button>
+            <div className="mt-8">
+                <div className="flex justify-between items-center">
+                    <p className="font-medium text-xl">Trending</p>
+                    <div className="flex items-center gap-2">
+                        <button className="bg-[#F1EFEE] px-2.5 py-1 rounded-md"><FaCaretLeft className="text-lg"/>
+                        </button>
+                        <button className="bg-[#F1EFEE] px-2.5 py-1 rounded-md"><FaCaretRight className="text-lg"/>
+                        </button>
+                    </div>
                 </div>
-            </div>
 
-            <div className="mt-6 flex items-center gap-2 overflow-x-scroll no-scrollbar">
-                {
-                    data.map((item) => {
-                        return (
-                            <div key={item.id} className="flex-shrink-0">
-                                <Image src={batman} alt={item.name} width={200} height={50} className="rounded-lg"/>
-                                <div className="flex flex-col gap-2">
-                                    <p className="font-semibold text-xl capitalize">{item.name}</p>
-                                    <div className="flex gap-2.5 items-center">
-                                        <p className={`${item.type === "comic" ? "bg-[#F5BFF1]" : "bg-[#B3D8FF] text-sm"} py-1 px-1.5 rounded-sm uppercase`}>{item.type}</p>
-                                        <p className="py-1 px-1.5 bg-[#E7E7E7] rounded-sm uppercase text-sm">{item.chapters}</p>
-                                        <p className="py-1 px-1.5 bg-[#E7E7E7] rounded-sm uppercase text-sm">{item.status}</p>
+                <div className="mt-6 flex items-center gap-2 overflow-x-scroll no-scrollbar">
+                    {
+                        data.map((item) => {
+                            return (
+                                <div key={item.id} className="flex-shrink-0">
+                                    <Image src={batman} alt={item.name} width={200} height={50} className="rounded-lg"/>
+                                    <div className="flex flex-col gap-2">
+                                        <p className="font-semibold text-xl capitalize">{item.name}</p>
+                                        <div className="flex gap-2.5 items-center">
+                                            <p className={`${item.type === "comic" ? "bg-[#F5BFF1]" : "bg-[#B3D8FF] text-sm"} py-1 px-1.5 rounded-sm uppercase`}>{item.type}</p>
+                                            <p className="py-1 px-1.5 bg-[#E7E7E7] rounded-sm uppercase text-sm">{item.chapters}</p>
+                                            <p className="py-1 px-1.5 bg-[#E7E7E7] rounded-sm uppercase text-sm">{item.status}</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        )
-                    })
-                }
+                            )
+                        })
+                    }
+                </div>
             </div>
         </main>
     );
