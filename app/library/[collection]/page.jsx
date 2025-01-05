@@ -31,7 +31,7 @@ const Collection = () => {
                             <div key={item.id} className="flex flex-col gap-2">
                                 <Image src={image} alt={item.name} width={250} className="rounded-lg h-52" />
                                 <div className="flex flex-col gap-4">
-                                    <Link href="/library/collections/collectionId" className="text-xl font-medium capitalize">{item.name}</Link>
+                                    <Link href={`/library/collection/${item.id}`} className="text-xl font-medium capitalize">{item.name}</Link>
                                     <div className="flex items-center gap-2">
                                         <p className="bg-[#E7E7E7] uppercase  py-1 px-1.5 rounded-sm text-sm">{item.titles.length} titles</p>
                                         <p className="bg-[#AFF4C6] uppercase  py-1 px-1.5 rounded-sm text-sm">{item.genres} genres</p>

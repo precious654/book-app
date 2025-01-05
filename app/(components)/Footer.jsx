@@ -19,7 +19,7 @@ const Footer = () => {
             >
               {item.category.length >= 1 && (
                 <p className="p-1 rounded-md uppercase bg-[#AFF4C6]">
-                  {item.category}
+                  {item.category[0] }
                 </p>
               )}
               <p

@@ -41,12 +41,19 @@ const Settings = () => {
                 </div>
                 <div className="flex flex-col gap-3">
                     <p className="font-medium text-xl capitalize">privacy</p>
-                    <div>
-                        <p className="capitalize font-medium text-lg">recent activity</p>
-                        <p className="opacity-60 text-sm">
-                            Allow other users see your recent activity including, read comics, bookmarks and favorites
-                        </p>
-                        <div></div>
+                    <div className="flex justify-between items-center">
+                        <div>
+                            <p className="capitalize font-medium text-lg">recent activity</p>
+                            <p className="opacity-60 text-sm">
+                                Allow other users see your recent activity including, read comics, bookmarks and
+                                favorites
+                            </p>
+                        </div>
+                        <div>
+                            <label htmlFor="check"></label>
+                            <input type="checkbox" id="check"/>
+                            <span className="slider round"></span>
+                        </div>
                     </div>
                     <div>
                         <p className="capitalize font-medium text-lg">recent activity</p>

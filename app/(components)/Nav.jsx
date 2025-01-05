@@ -12,6 +12,7 @@ import Notifications from "@/app/(components)/Notifications";
 
 const Nav = () => {
     const pathName = usePathname();
+    console.log(pathName);
 
     const [displayNotifications, setDisplayNotifications] = React.useState(false);
     const [notifications, setNotifications] = React.useState(true);
@@ -37,7 +38,7 @@ const Nav = () => {
 
                     <p>|</p>
 
-                    <Link href="/library" className={`${pathName === "/library" ? "text-[#000000]" : ""} flex items-center gap-2`}>
+                    <Link href="/library" className={`${pathName.includes("library") ? "text-[#000000]" : ""} flex items-center gap-2`}>
                         <LuLibrary/>
                         Library
                     </Link>
