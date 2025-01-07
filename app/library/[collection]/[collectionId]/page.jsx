@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import collections from "@/app/(data)/collection.json";
 import info from "@/app/(data)/data.json";
-import marvel from "@/public/assets/marvel.jpg";
+import dc from "@/public/assets/dc.jpg";
 import superman from "@/public/assets/superman.jpg"
 import Icons from "@/app/(components)/Icons";
 import {ArrowDownUp, Ellipsis} from 'lucide-react';
@@ -23,7 +23,7 @@ const collectionId = async ({params}) => {
                     data.map((item) => {
                         return (
                             <div key={item.id} className="flex gap-4">
-                                <Image src={marvel} alt={item.name} width={350} className="rounded-xl h-72" />
+                                <Image src={dc} alt={item.name} width={350} className="rounded-xl h-72" />
 
                                 <div className="flex flex-col gap-3 flex-grow-0">
                                     <div className="text-3xl font-semibold capitalize">{item.name}</div>
@@ -55,11 +55,11 @@ const collectionId = async ({params}) => {
                 </div>
 
                 <div className="flex flex-col gap-4 mt-3">
-                    {collectionData.map((item) => {
+                    {collectionData.map((item, index) => {
                         return (
                             <div key={item.id} className="flex justify-between items-center text-[#454545] font-medium">
                                 <div className="flex gap-4 items-center">
-                                    <p>{item.id < 10 ? "0"+item.id : item.id }</p>
+                                    <p>{index < 10 ? "0"+(index + 1) : index + 1}</p>
                                     <Image src={superman} alt={item.name} width={70} className="rounded-lg" />
                                     <div className="flex flex-col gap-3">
                                         <p className="capitalize font-medium text-xl">{item.name}</p>

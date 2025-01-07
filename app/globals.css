@@ -27,3 +27,39 @@ body {
 .no-scrollbar{
   scrollbar-width: none;
 }
+
+.file-upload{
+  display: inline-block;
+  inline-size: 100%;
+  block-size: 9.6rem;
+  background-color: #F1EFEE;
+  border: 1px #EAECF0 solid;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.toggle-button {
+  display: inline-block;
+  inline-size: 4rem;
+  block-size: 2.1rem;
+  background-color: #F2F2F2;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  position: relative;
+}
+
+.toggle-button::before{
+  display: inline-block;
+  content:'';
+  inline-size: 1.7rem;
+  block-size: 1.7rem;
+  background-color: #F1FEEE;
+  border-radius: 0.2rem;
+  margin: 3px;
+  transition: 0.25s;
+}
+
+input:checked + .toggle-button::before{
+  background-color: #AFF4C6;
+  transform: translateX(2rem);
+}
