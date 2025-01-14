@@ -3,6 +3,7 @@ import Link from "next/link";
 import { GoArrowUpRight } from "react-icons/go";
 import { GoPlus } from "react-icons/go";
 import data from "../(data)/data.json";
+import SearchBox from "@/app/(components)/SearchBox";
 
 const Footer = () => {
     const footerData = data.filter( (item) => item.id <  3);
@@ -17,7 +18,7 @@ const Footer = () => {
               key={item.id}
               className="bg-[#F9F9F9] text-[#454545] p-2 rounded-lg flex items-center gap-2"
             >
-              {item.category.length >= 1 && (
+              {typeof item.category === "object" && item.category.length >= 1 && (
                 <p className="p-1 rounded-md uppercase bg-[#AFF4C6]">
                   {item.category[0] }
                 </p>
