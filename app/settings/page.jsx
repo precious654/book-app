@@ -56,7 +56,7 @@ const Settings = () => {
                 <div className="flex flex-col gap-3">
                     <p className="font-medium text-xl capitalize">about</p>
                     <p className="bg-[#F1EFEE] p-4 rounded-xl flex-grow text-sm">
-                        I'm a Product Designer based in Rivers, Nigeria.
+                        I&apos;m a Product Designer based in Rivers, Nigeria.
                         I specialise in UX/UI design, brand strategy, and Webflow development.
                     </p>
                 </div>
