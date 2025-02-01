@@ -24,12 +24,7 @@ const Nav = () => {
     return (
         <header className="pt-4">
             <nav className="flex items-center justify-between">
-                <div className="flex gap-3 items-center">
-                    <p className="w-3 h-3 rounded-full bg-[#70706E]"></p>
-                    <p className="w-3 h-3 rounded-full bg-[#70706E]"></p>
-                    <p className="w-3 h-3 rounded-full bg-[#70706E]"></p>
-                </div>
-
+                <p></p>
                 <div className="bg-[#F9F9F9] text-[#C5C5C5] text-sm flex gap-6 items-center p-3 rounded-xl">
                     <Link href="/feed" className={`${pathName === "/feed" ? "text-[#000000]" : ""} flex items-center gap-2`}>
                         <FaPeopleGroup/>

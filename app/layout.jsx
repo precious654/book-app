@@ -1,4 +1,5 @@
 import { Poppins } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Nav from "./(components)/Nav";
 import Footer from "./(components)/Footer";
@@ -10,6 +11,10 @@ const poppins = Poppins({
   weight: ["400", "700"],
 });
 
+const SFPro = localFont(
+    {src: "../public/Fonts/SF-Pro.ttf",}
+)
+
 export const metadata = {
   title: "Book app",
   description: "Read your favourite comics online",
@@ -18,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={SFPro.className}>
         <main className="containerr flex flex-col gap-2 pb-2">
           <Nav />
           <div className="flex gap-4 h-4/5">
