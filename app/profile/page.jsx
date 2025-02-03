@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from "next/image";
-import avatar from "@/public/assets/avatar.jpg";
+import avatar from "../../public/assets/avatar.jpg";
 import {FaCaretLeft, FaCaretRight} from "react-icons/fa";
-import data from "@/app/(data)/data.json";
-import superman from "@/public/assets/superman.jpg";
+import data from "..//(data)/data.json";
+import superman from "../../public/assets/superman.jpg";
 import {Ellipsis} from "lucide-react";
 
 const Profile = () => {

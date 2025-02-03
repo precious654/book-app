@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 import collections from "../../../(data)/collection.json";
 import info from "../../../(data)/data.json";
-import dc from "@/public/assets/dc.jpg";
-import superman from "@/public/assets/superman.jpg"
-import Icons from "@/app/(components)/Icons";
+import dc from "../../../../public/assets/dc.jpg";
+import superman from "../../../../public/assets/superman.jpg"
+import Icons from "../../../(components)/Icons";
 import {ArrowDownUp, Ellipsis} from 'lucide-react';
 
 const collectionId = async ({params}) => {

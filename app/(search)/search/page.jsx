@@ -1,5 +1,5 @@
 import React from 'react'
-import SearchBox from "@/app/(components)/SearchBox";
+import SearchBox from "../../(components)/SearchBox";
 
 const Page = () => {
     return (

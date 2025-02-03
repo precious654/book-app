@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import data from  "../(data)/data.json";
 import collections from "../(data)/collection.json";
-import blueAndGold from "@/public/assets/blue-and-gold.jpg";
-import gachiakuta from "@/public/assets/gachiakuta.jpg";
-import random from "@/public/assets/random.jpg";
+import blueAndGold from "../../public/assets/blue-and-gold.jpg";
+import gachiakuta from "../../public/assets/gachiakuta.jpg";
+import random from "../../public/assets/random.jpg";
 import { Ellipsis } from 'lucide-react';
 import {FaCaretLeft, FaCaretRight} from "react-icons/fa";
 

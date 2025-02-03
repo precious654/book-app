@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import avatar from "@/public/assets/avatar.jpg";
-import anilist from "@/public/assets/AniList_logo.svg.png";
-import mal from "@/public/assets/MyAnimeList_Logo.png";
+import avatar from "../../public/assets/avatar.jpg";
+import anilist from "../../public/assets/AniList_logo.svg.png";
+import mal from "../../public/assets/MyAnimeList_Logo.png";
 import { CloudUpload } from 'lucide-react';
 
 const Settings = () => {

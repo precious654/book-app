@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { CirclePlus } from 'lucide-react';
 import collection from "../../(data)/collection.json";
-import image from "@/public/assets/random.jpg";
+import image from "../../../public/assets/random.jpg";
 
 const Collection = () => {
     return (
