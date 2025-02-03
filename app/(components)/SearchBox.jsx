@@ -1,5 +1,5 @@
 import React from 'react'
-import data from "@/app/(data)/data.json";
+import data from "../(data)/data.json";
 import Link from "next/link";
 import {GoArrowUpRight} from "react-icons/go";
 import {IBM_Plex_Mono} from "next/font/google";
