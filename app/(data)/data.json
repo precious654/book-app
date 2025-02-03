@@ -6,7 +6,7 @@
         "author": "Eichiro Oda",
         "coverImage": "",
         "type": "Manga",
-        "category": "trending",
+        "category": ["action", "adventure" ,"pirates"],
         "rating": 0,
         "reviews": 0,
         "issues": 1,

@@ -1,15 +1,8 @@
-import { Poppins } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import Nav from "./(components)/Nav";
 import Footer from "./(components)/Footer";
 import SidePanel from "./(components)/SidePanel";
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["400", "700"],
-});
 
 const SFPro = localFont(
     {src: "../public/Fonts/SF-Pro.ttf",}
