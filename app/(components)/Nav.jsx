@@ -8,7 +8,7 @@ import {LuLibrary} from "react-icons/lu";
 import {GrSettingsOption} from "react-icons/gr";
 import {IoIosNotificationsOutline} from "react-icons/io";
 import {BellDot} from 'lucide-react';
-import Notifications from "@/app/(components)/Notifications";
+import Notifications from "../(components)/Notifications";
 
 const Nav = () => {
     const pathName = usePathname();

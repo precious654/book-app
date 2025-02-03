@@ -3,7 +3,6 @@ import Link from "next/link";
 import { GoArrowUpRight } from "react-icons/go";
 import { GoPlus } from "react-icons/go";
 import data from "../(data)/data.json";
-import SearchBox from "@/app/(components)/SearchBox";
 
 const Footer = () => {
     const footerData = data.filter( (item) => item.id <  3);

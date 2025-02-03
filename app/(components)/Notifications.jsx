@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "next/image";
 import data from "../(data)/data.json"
-import dandadan from "@/public/assets/dandadan.jpg"
+import dandadan from "../../public/assets/dandadan.jpg"
 
 const Notifications = () => {
     const notificationsData = data.filter((item) => item.id > 3 && item.id < 8 );
